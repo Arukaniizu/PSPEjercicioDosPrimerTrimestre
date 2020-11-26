@@ -10,23 +10,23 @@ public class Main {
         long inicio, fin, tiempo;
         Scanner scanner = new Scanner(System.in);
         int rangoInicial = 1;
-        int numbrethreads = 0;
+        int numeroDeHilos = 0;
         try {
             System.out.println("Inserta el numero de hilos");
-            numbrethreads = scanner.nextInt();
+            numeroDeHilos = scanner.nextInt();
         } catch (InputMismatchException e) {
             System.err.println("Dato introducido incorrecto");
              return;
         }
         MostrarDatos verDatos = new MostrarDatos(0);
         int numeroRegistros = verDatos.verDatosDos();
-        int rango = numeroRegistros / numbrethreads;
-        int resto = numeroRegistros % numbrethreads;
+        int rango = numeroRegistros / numeroDeHilos;
+        int resto = numeroRegistros % numeroDeHilos;
         int rangoFinal = rango;
         inicio = System.currentTimeMillis();
-        for (int i = 0; i < numbrethreads; i++) {
+        for (int i = 0; i < numeroDeHilos; i++) {
             if (resto != 0) {
-                verDatos = new MostrarDatos(resto, rangoFinal, rangoInicial, numbrethreads, rango);
+                verDatos = new MostrarDatos(resto, rangoFinal, rangoInicial, numeroDeHilos, rango);
                 verDatos.start();
                 rangoInicial += rango + 1;
                 rangoFinal += rango + 1;
@@ -37,7 +37,7 @@ public class Main {
                     e.printStackTrace();
                 }
             } else {
-                verDatos = new MostrarDatos(resto, rangoFinal, rangoInicial, numbrethreads, rango);
+                verDatos = new MostrarDatos(resto, rangoFinal, rangoInicial, numeroDeHilos, rango);
                 verDatos.start();
                 rangoInicial += rango;
                 rangoFinal += rango;
@@ -51,7 +51,7 @@ public class Main {
 
             //Este while es para que todos los hilos entren y acaben a la vez si no cuando
             //acaba el hilo final se sale aunque otros no terminasen y sale mal la cuenta del dinero.
-        while (MostrarDatos.getContadorDeHilos() < numbrethreads) {
+        while (MostrarDatos.getContadorDeHilos() < numeroDeHilos) {
         }
         fin = System.currentTimeMillis();
         tiempo = fin - inicio;

@@ -10,7 +10,7 @@ public class MostrarDatos extends Thread {
     int resto;
     int rangoFinal;
     int rangoInicial;
-    int numbrethreads;
+    int numeroDeHilos;
     int rango;
 
 
@@ -22,7 +22,7 @@ public class MostrarDatos extends Thread {
         this.resto = resto;
         this.rangoInicial = rangoInicial;
         this.rangoFinal = rangoFinal;
-        this.numbrethreads = numbrethreads;
+        this.numeroDeHilos = numbrethreads;
         this.rango = rango;
     }
 
