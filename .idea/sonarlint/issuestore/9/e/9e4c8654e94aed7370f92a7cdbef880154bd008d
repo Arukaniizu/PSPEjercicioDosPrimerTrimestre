@@ -1,20 +1,20 @@
 
-S	java:S106="9Replace this use of System.out or System.err by a logger.(„£Íìùÿÿÿÿ
-\
-java:S2142$"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-S	java:S106<"9Replace this use of System.out or System.err by a logger.(çÕÊÌıÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(‰é¼Ì
 :
 java:S1659
 "$Declare "tiempo" on a separate line.(ûÊ¬
->	java:S1086")Either remove or fill this block of code.(î“ÁŠ
+\
+java:S2142$"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+N	java:S106"9Replace this use of System.out or System.err by a logger.(†¤¶‚
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‰é¼Ì
 i
 java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(íŒóU
+\
+java:S2142."FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+>	java:S1086")Either remove or fill this block of code.(Ìˆğ
+S	java:S106="9Replace this use of System.out or System.err by a logger.(„£Íìùÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(ôÙÊÔşÿÿÿÿ
+N	java:S106;"9Replace this use of System.out or System.err by a logger.(»ö›Ì
 7
 java:S1659
 "!Declare "fin" on a separate line.(ûÊ¬
-N	java:S106"9Replace this use of System.out or System.err by a logger.(†¤¶‚
-S	java:S106:"9Replace this use of System.out or System.err by a logger.(ôÙÊÔşÿÿÿÿ
-\
-java:S2142."FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-N	java:S106;"9Replace this use of System.out or System.err by a logger.(÷Š£«
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(çÕÊÌıÿÿÿÿ

@@ -56,7 +56,7 @@ public class Main {
         fin = System.currentTimeMillis();
         tiempo = fin - inicio;
         System.out.println("---------------------------------------------------------------------------------------------");
-        System.out.println("La empesa gasta " + MostrarDatos.getDinero() + "€ en sueldo de los empleados");
+        System.out.println("La empresa gasta " + MostrarDatos.getDinero() + "€ en sueldo de los empleados");
         System.out.println(MostrarDatos.getTiempoPrimeraLectura() + " milisegundos tarda en realizar la lectura secuencial");
         System.out.println(tiempo + " milisegundos tarda en realizar la lectura con hilos");
     }
